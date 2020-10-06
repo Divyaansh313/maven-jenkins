@@ -18,6 +18,14 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
+  <distributionManagement>
+<snapshotRepository>
+<id>CI-CD</id>
+<name>CI-CD</name>
+<url>http://localhost:8081/repository/CI-CD/</url>
+</snapshotRepository>
+</distributionManagement>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
