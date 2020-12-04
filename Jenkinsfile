@@ -4,18 +4,18 @@
       stage('Clean'){
           steps{
           echo 'Clean Stage'
-          bat 'mvn -f C:/Users/ASUS/.jenkins/workspace/Final_Lab_exp clean'
+          bat 'mvn -f C:/Users/ASUS/.jenkins/workspace/Final_Lab_exp/my-app clean'
           }
       }
       stage('Test'){
           steps{
           echo 'Testing stage'
-          bat 'mvn -f C:/Users/ASUS/.jenkins/workspace/Final_Lab_exp test'
+          bat 'mvn -f C:/Users/ASUS/.jenkins/workspace/Final_Lab_exp/my-app test'
           }
       }
       stage('Install'){
           steps{
-          bat 'mvn -f C:/Users/ASUS/.jenkins/workspace/Final_Lab_exp install'
+          bat 'mvn -f C:/Users/ASUS/.jenkins/workspace/Final_Lab_exp/my-app install'
           }
       }
     }
