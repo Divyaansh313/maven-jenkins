@@ -4,11 +4,12 @@
       stage('Build'){
           steps{
           echo 'Build Stage'
+          bat 'mvn install'
           }
       }
-      stage('Test'){
+      stage('Deploy'){
           steps{
-          shell('mvn clean')
+          bat 'mvn deploy'
           }
       }
     }
